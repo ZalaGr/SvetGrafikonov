@@ -1,0 +1,29 @@
+body {
+    padding-top: 80px;
+  }
+
+
+.nav-link:hover{
+    color: #0d6efd;
+}
+
+.active{
+    font-weight: bold;
+}
+
+
+/* IMAGE */ 
+.img-max {
+    max-width: 70%;
+    width:100%;
+}
+
+
+/* CARD */
+.card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 90%;
+}

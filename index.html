@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Svet grafikonov</title>
+        <link rel="icon" href="images/logo.png">
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -16,109 +17,224 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <header>
             <!-- place navbar here -->
-            <nav
-                class="navbar navbar-expand-sm navbar-light bg-light"
-            >
-                <div class="container">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-md">
+                    
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" width="30" height="30" class="d-inline-block align-text-top">
+                        <span class="mx-2 fs-3" style="color: #0d6efd">svet grafikonov</span>
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" aria-current="page"
-                                    >Home
-                                    <span class="visually-hidden">(current)</span></a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Dropdown</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>
-                        </ul>
-                        <form class="d-flex my-2 my-lg-0">
-                            <input
-                                class="form-control me-sm-2"
-                                type="text"
-                                placeholder="Search"
-                            />
-                            <button
-                                class="btn btn-outline-success my-2 my-sm-0"
-                                type="submit"
-                            >
-                                Search
-                            </button>
-                        </form>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                          <a class="nav-link active" href="index.html">Vse o grafikonih</a>
+                          <a class="nav-link" href="prelisicijo.html">Vas lahko prelisičijo?</a>
+                          <a class="nav-link" href="#">Test grafične pismenosti</a>
+                          <a class="nav-link" href="#">O strani</a>
+                        </div>
                     </div>
+
                 </div>
             </nav>
             
         </header>
         <main>
+            <!--Kaj je svet grafikonov?-->
             <div class="container">
-                <div class="row justify-content-center align-items-center g-2">
-                    <div class="col-md-6      " >
-                        <h2>Hello</h2>
-                        <div class="card">
-                            <img class="card-img-top" src="images/Design violation/Color mess/prav.png" alt="Title" />
-                            <div class="card-body">
-                                <h4 class="card-title">Title</h4>
-                                <p class="card-text">Text</p>
-                            </div>
-                        </div>
-                        
+                <div class="row" id="svet-grafikonov">
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                        <h1>Kaj je svet grafikonov?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
                     </div>
-                    <div class="col-md-4      " >
-                        <div class="card">
-                            <img class="card-img-top" src="images/Design violation/Inverted axis/invertY_narobe.png" alt="Title" />
-                            <div class="card-body">
-                                <h4 class="card-title">Title</h4>
-                                <p class="card-text">Text</p>
-                            </div>
-                        </div>
-                        
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="images/grafi.png" class="img-fluid img-max" alt="Graph Image">
                     </div>
                 </div>
             </div>
-            
+
+            <!--Grafikoni-->
+            <div class="container-fluid full-screen bg-light" id="grafikoni">
+                <div class="container">
+                    <div class="row bg-light my-5">
+                        <div class="col-md-6 mt-3 order-md-last d-flex flex-column justify-content-center align-items-center text-center">
+                            <h1>Grafikoni</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                            <img src="images/Context errors/Missing data/brez_naslova_narobe.png" class="img-fluid img-max my-3" alt="Graph Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Branje grafikonov-->
+            <div class="container">
+                <div class="row my-5" id="branje-grafikonov">
+                    <div class="text-center">
+                        <h1>Branje grafikonov</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                    </div>
+                </div>
+                <!--CARDS-->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card text-white bg-primary h-100">
+                        <img src="images/Context errors/Missing data/brez_naslova_narobe.png" class="card-img-top mt-4" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Osnovni elementi grafov</h5>
+                          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-danger h-100">
+                          <img src="images/Context errors/Missing data/brez_naslova_narobe.png" class="card-img-top mt-4" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title text-center">Črtni grafikoni</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                      <div class="card text-white bg-warning h-100">
+                        <img src="images/Context errors/Missing data/brez_naslova_narobe.png" class="card-img-top mt-4" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Palični grafikoni</h5>
+                          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-info h-100">
+                            <img src="images/Context errors/Missing data/brez_naslova_narobe.png" class="card-img-top mt-4" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title text-center">Tortni grafikoni</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-secondary h-100">
+                            <img src="images/Context errors/Missing data/brez_naslova_narobe.png" class="card-img-top mt-4" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title text-center">Raztreseni grafikoni</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="card text-white bg-success h-100">
+                            <img src="images/Context errors/Missing data/brez_naslova_narobe.png" class="card-img-top mt-4" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title text-center">Mehurčni grafikoni</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Grafična pismenost-->
+            <div class="container-fluid full-screen bg-light" id="graficna-pismenost">
+                <div class="container">
+                    <div class="row bg-light mt-5">
+                        <h1 class="text-center mt-3">Grafična pismenost</h1>
+                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                        </div>
+                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Možne manipulacije-->
+            <div class="container  mt-3" id="manipulacije-grafikonov">
+                <div class="text-center">
+                    <h1>Manipulacije grafikonov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                </div>
+
+                <!--Accordion-->
+                <div class="accordion" id="accordionExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Logične napake 
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>....</strong>                          
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Vsebinske napake 
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>....</strong>                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Kršitev oblikovnih pravil 
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>....</strong>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                </div>
+            </div>
         </main>
+
+
         <footer>
             <!-- place footer here -->
+            <div class="container-fluid full-screen bg-light">
+                <div class="container">
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+                
+                    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                    </ul>
+                    </footer>
+                </div>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
