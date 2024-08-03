@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Your JSON data
     const data = [
@@ -220,4 +221,5 @@ function populateQuestion(question) {
 
 // Populate the first question
 populateQuestion(firstQuestion);
+
 });
