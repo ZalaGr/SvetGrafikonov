@@ -26,7 +26,7 @@
             <nav class="navbar navbar-expand-lg navbar-light box-color fixed-top border-bottom">
                 <div class="container-md">
                     
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         <img src="images/logo.png" width="30" height="30" class="d-inline-block text-center">
                         <span class="logo mx-2" >Svet grafikonov</span>
                     </a>
@@ -36,7 +36,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                          <a class="nav-link active" href="index.html">Vse o grafikonih</a>
+                          <a class="nav-link active">Vse o grafikonih</a>
                           <a class="nav-link" href="vas-lahko-prelisicijo.html">Vas lahko prelisičijo?</a>
                           <a class="nav-link" href="#">Test grafične pismenosti</a>
                           <a class="nav-link" href="#">O strani</a>
@@ -80,10 +80,10 @@
                                     <img src="images/Design violation/Inverted axis/invertY_prav.png" class="d-block w-100">
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="images/Reasoning errors/Arbitrary threshold/HICP_dober_graf.png" class="d-block w-100">
+                                    <img src="images/Data errors/Arbitrary threshold/HICP_dober_graf.png" class="d-block w-100">
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="images/Reasoning errors/False linkage/HxW_prav.png" class="d-block w-100">
+                                    <img src="images/Design violation/Truncated axis/HxW_prav.png" class="d-block w-100">
                                   </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                             </p>
                         </div>
                         <div class="col-md-6 mt-3 d-flex flex-column justify-content-center align-items-center text-left">
-                            <h3>Manipulacije grafikonov</h3>
+                            <h2>Manipulacije grafikonov</h2>
                             <p>Manipulacija grafikonov je praksa, ki vključuje spreminjanje grafičnih prikazov z namenom zavajanja uporabnikov ter vplivanja na njihove odločitve. 
                                 <br>Da bi se uspešno ubranili pred temi zavajajočimi tehnikami, je ključno, da najprej razumemo, kako pravilno brati in interpretirati grafe. To vključuje prepoznavanje osnovnih elementov grafikona, razumevanje meril in enot ter preučevanje konteksta prikazanih podatkov. Ko imamo jasno predstavo o tem, kako so podatki predstavljeni, lahko kritično ocenimo informacije in prepoznamo morebitne namerne ali nenamerne napake v vizualizacijah.
                             </p>
@@ -118,7 +118,7 @@
                     <div class="row mb-2">
                         <div class="col-md-2">
                         </div>
-                        <div class="col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="col-md-8 d-flex flex-column justify-content-center align-items-center text-left">
                             <h2 class="text-center">Razumevanje grafikonov</h2>
                             <p>
                                 Namen grafikonov je podajanje informacij. Da bi te informacije pravilno razbrali, moramo vedeti, kako brati grafikone. V tem sklopu so predstavljeni osnovni elementi, ki so skupni vsem grafikonom, kako beremo grafikone ter najpogostejši tipi, ki imajo svoje specifične značilnosti in namen.
@@ -227,7 +227,8 @@
                                     <p class="card-text text-left p-2">
                                         Mehurčni grafikoni so nadgradnja raztresenih grafikonov, saj poleg položaja točk v koordinatnem sistemu podajajo informacije tudi z velikostjo točk.  
                                         Primerni so za predstavitev finančnih podatkov in omogočajo analizo odnosov med tremi spremenljivkami. 
-                                        Na X-osi so prikazane neodvisne spremenljivke, na Y-osi odvisne spremenljivke, površina mehurčka pa predstavlja tretjo spremenljivko.
+                                        Na X-osi so prikazane neodvisne spremenljivke, na Y-osi odvisne spremenljivke, velikost mehurčka pa predstavlja tretjo spremenljivko.
+                                        Velikost tretje spremenljivke je sorazmerna s površino mehurčka in ne s premerom.
                                     </p>                                
                                 </div>
                             </div>
@@ -252,12 +253,41 @@
             <div class="container-fluid full-screen box-color" id="graficna-pismenost">
                 <div class="container">
                     <div class="row mt-5">
-                        <h2 class="text-center mt-3">Grafična pismenost</h2>
-                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center text-center">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                        <div class="col-md-2">
                         </div>
-                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center text-center">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
+                        <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
+                            <h2 class="mt-3">Grafična pismenost</h2>
+                            <div>
+                                <h5 class="mt-3">Kaj je grafična pismenost?</h5>
+                                <p>
+                                    Grafična pismenost je sposobnost pridobivanja informacij iz grafikonov.
+                                    Zajema 3 stopnje: sposobnost najti specifične podatke v grafikonu, sposobnost razbiranja odnosov med podatki in sposobnost sklepanja ter napovedovanja na podlagi 
+                                    predstavljenih podatkov.
+                                    <br>Na primer, v črtnem grafikonu to pomeni sposobnost razumeti, kaj nam pove določena točka, razbrati, katera točka med dvema izbranima ima večjo vrednost 
+                                    in sklepati o prihodnjih trendih glede na naklon krivulje.
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="mt-3">Zakaj je pomembna?</h5>
+                                <p>
+                                    Grafikoni se pojavljajo v vseh vidikih našega življenja. Uporabljajo se v časopisih, revijah in na družabnih omrežjih, prav tako pa so nepogrešljivi 
+                                    pri podajanju informacij v zdravstvu, financah in politiki.
+                                    <br>Zaradi njihove razširjene uporabe je zelo pomembno, da razumemo grafikone in smo grafično pismeni. Posamezniki, ki so grafično nepismeni sprejemajo 
+                                    slabše odločitve za svoje zdravje, slabše ocenjujejo in razumejo informacije o tveganju ter so pogosteje žrtve zavajajočih grafikonov.
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="mt-3">Kaj vpliva na zavajanje grafikonov?</h5>
+                                <p>
+                                    Kljub temu, da so grafikoni povsod okoli nas, je samo četrtina prebivalstva grafično pismena, velik del pa ne zna interpretirati niti zelo preprostih grafikonov.
+                                    Grafično pismeni posamezniki so manj pogosto zavedeni z manipuliranimi grafikoni, vendar niso povsem odporni na zavajanje. Hitreje opazijo osnovne manipulacije, 
+                                    kot je odrezana y-os, vendar so včasih manj pozorni na podrobnosti in spregledajo očitne napake.
+                                    <br>Najbolj učinkovita taktika za zmanjšanje vpliva manipulacij, ne glede na stopnjo grafične pismenosti, je opozoriti osebe na možne manipulacije, 
+                                    da postanejo bolj pozorne in natančneje preberejo grafikone.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
                         </div>
                     </div>
                 </div>
@@ -266,56 +296,258 @@
             <!--Možne manipulacije-->
             <div class="container" id="manipulacije-grafikonov">
                 <div class="container my-5">
-                    <div class="text-center">
-                        <h2>Manipulacije grafikonov</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
-                    </div>
+                    <div class="text-left">
+                        <h1 class="text-center">Manipulacije grafikonov</h1>
+                        <div>
+                            <h5 class="mt-4">Manipuliranje podatkov</h5>
+                            <p>
+                                Manipuliranje podatkov vključuje vse prakse, ki namenoma spreminjajo ali izkrivljajo podatke pred ustvarjanjem grafikona ali poskušajo manipulirati z že narejenimi grafikoni, 
+                                tako da jih postavijo v napačen kontekst. Takšne prakse vodijo do napačnih zaključkov in pripovedujejo nepravilno zgodbo, ki zavaja bralce.
+                            </p>
 
-                    <!--Accordion-->
-                    <div class="accordion" id="accordionExample">
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                Logične napake 
-                            </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>....</strong>                          
+                            <div class="accordion" id="accordionOne">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nezanesljivi" aria-expanded="false" aria-controls="nezanesljivi">
+                                        <strong>Nezanesljivi podatki</strong>
+                                    </button>
+                                    </h2>
+                                    <div id="nezanesljivi" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+                                        <div class="accordion-body">
+                                            Pod grafikone z nezanesljivimi podatki spadajo tisti, pri katerih vir podatkov ni podan, ni zanesljiv ali je napačno predstavljen. 
+                                            Prav tako lahko vključuje primere, kjer je podatkov premalo za ustrezno analizo ali so uporabljene anomalije, ki ne predstavljajo resničnega stanja.                      
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#selektivnaIzbira" aria-expanded="false" aria-controls="selektivnaIzbira">
+                                        <strong>Selektivna izbira </strong>
+                                    </button>
+                                    </h2>
+                                    <div id="selektivnaIzbira" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+                                        <div class="accordion-body">
+                                            Velikokrat je selekcija podatkov nujna, da lahko ustvarimo razumljiv in pregleden grafikon. Vendar je pomembno razlikovati med selekcijo zaradi večje preglednosti 
+                                            in selektivno izbiro specifičnih podatkov, ki podpirajo specifična prepričanja ter ignoriranje podatkov, ki mu nasprotujejo. 
+                                            Takšno selektivno izbiranje podatkov je zelo pogost način zavajanja, ki se pogosto pojavi skupaj z lažno korelacijo.                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#poljubniPrag" aria-expanded="false" aria-controls="poljubniPrag">
+                                            <strong>Izbira poljubnega praga</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="poljubniPrag" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+                                        <div class="accordion-body">
+                                            Na grafikonih včasih vidimo označen prag, ki nam poda določeno informacijo (na primer grafikon, ki prikazuje, koliko učencev je opravilo izpit, lahko označi prag 50%). 
+                                            Ta prag lahko posamezniki postavijo kamorkoli želijo in s tem ustvarijo napačen vtis na bralca. 
+                                            Prag je lahko predstavljen grafično na grafikonu ali pa v pisni obliki v spremnem besedilu.                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laznaKorelacija" aria-expanded="false" aria-controls="laznaKorelacija">
+                                            <strong>Lažna korelacija</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="laznaKorelacija" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+                                        <div class="accordion-body">
+                                            Lažna korelacija je manipulacija, ki predpostavlja povezavo ali vpliv med pojavi, ki dejansko ne obstaja.
+                                            Grafikoni, ki predstavljajo lažno korelacijo, primerjajo vrednosti, ki niso primerljive. To se zgodi, kadar vrednosti niso normalizirane 
+                                            ali imajo različne definicije merjenih vrednosti.
+                                            Pod to vrsto manipulacije spada tudi iskanje vzorcev v preteklosti in predvidevanje prihodnosti na podlagi zgodovinskih podatkov.                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#podrobnosti" aria-expanded="false" aria-controls="podrobnosti">
+                                            <strong>Zanemarjanje podrobnosti</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="podrobnosti" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+                                        <div class="accordion-body">
+                                            Zanemarjanje podrobnosti pomeni ignoriranje ključnih informacij ali razlik v podatkih, ki so bistvene za pravilno interpretacijo. 
+                                            To vodi do neustreznih primerjav in napačnih zaključkov, saj se ne upošteva konteksta, metodologije ali enot merjenja.
+                                            Primeri take manipulacije so uporaba absolutni številk namesto normaliziranih vrednostih in primerjanje podatkov, ki imajo različne definicije merjene vrednosti.                         
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#opombe" aria-expanded="false" aria-controls="opombe">
+                                        <strong>Uporaba opomb</strong>
+                                    </button>
+                                    </h2>
+                                    <div id="opombe" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+                                        <div class="accordion-body">
+                                            Opombe na grafikonih lahko služijo za pojasnitev podatkov in podajanje dodatnih informacij, kar prispeva k večji jasnosti in razumevanju grafikona. 
+                                            Vendar pa se lahko opombe uporabljajo tudi za zavajanje, saj lahko opozarjajo na trend ali povezavo, ki v resnici ne obstajajo.                         
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mocBesed" aria-expanded="false" aria-controls="mocBesed">
+                                        <strong>Moč besed</strong>
+                                    </button>
+                                    </h2>
+                                    <div id="mocBesed" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+                                        <div class="accordion-body">
+                                            Grafikone velikokrat srečamo na družabnih omrežjih, kjer jih običajno spremlja besedilo, ki lahko ponudi dodatni kontekst ali pa zavajajočo interpretacijo podatkov.
+                                            Spremni tekst lahko vključuje čustveno nabite besede ali neresnična dejstva. To je škodljivo, saj ljudje pogosto oblikujemo mnenja na podlagi prvega vtisa in nato 
+                                            iščemo dokaze, ki podpirajo ta mnenja, namesto da bi racionalno pretehtali podatke.
+                                            Pod to skupino spada tudi manipulacija naslovov grafikonov, čeprav jih večina bralcev pogosto ignorira. Naslovi največkrat vplivajo na mnenje bralca, 
+                                            ko grafikon obravnava kontroverzne teme.                        
+                                        </div>
+                                    </div>
+                                </div>
+    
                             </div>
                         </div>
 
-                        <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Vsebinske napake 
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>....</strong>                          
+                        <hr class="m-4">
+
+                        <div>
+                            <h5>Kršitev oblikovnih pravil </h5>
+                            <p>
+                                Manipulacije, ki kršijo oblikovna pravila, nas lahko zavedejo zaradi naših pričakovanj o tem, kako naj bi grafikoni izgledali. Čeprav ta vrsta manipulacije ni tako pogosta, 
+                                služi za izpostavljanje določenega sporočila ali vplivanje na percepcijo podatkov.
+                                <br><br>Razprava o kršenju oblikovnih pravil je pogosto nejasna, saj nimamo enotno dogovorjenih oblikovnih standardov. 
+                                Kljub temu pa so se skozi leta oblikovala nekatera osnovna pravila, ki služijo kot smernice za pravilno oblikovanje grafikona.
+
+                                <p><strong>Osnovna oblikovna pravila so:</strong></p>
+                                <ul>
+                                    <li>naraščajoča trendna črta pomeni povečanje, padajoča pa zmanjšanje</li>
+                                    <li>rdeča barva označuje negativno vrednost, zelena pa pozitivno</li>
+                                    <li>os se začne pri 0 in vrednosti na osi se večajo</li>
+                                    <li>merilo na osi je enakomerno</li>
+                                    <li>večji simboli pomenijo večjo vrednost</li>
+                                    <li>predmeti, ki so blizu skupaj, so povezani</li>
+                                </ul>
+                            </p>
+
+                            <div class="accordion" id="accordionThree">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#odrezanaOs" aria-expanded="false" aria-controls="odrezanaOs">
+                                            <strong>Odrezana os</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="odrezanaOs" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                                        <div class="accordion-body">
+                                            Ta manipulacija je najbolj pogosta pri stolpičnih grafikonih. V grafikonih z odrezano osjo je vsaj ena os manipulirana tako, da se ne začne z vrednostjo 0. 
+                                            S tem vpliva na našo percepcijo o velikosti razlike med dvema vrednostima ter spreminja naklon trendne črte. 
+                                            <br><br>Vendar pa odrezana os sama po sebi še ne pomeni, da nas nekdo želi zavesti. Včasih je uporaba odrezane osi smiselna, saj lahko pripomore k večji jasnosti prikaza, 
+                                            še posebej pri velikih podatkih ali majhnih razlikah med točkami.                        
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dvojnaOs" aria-expanded="false" aria-controls="dvojnaOs">
+                                            <strong>Dvojna os</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="dvojnaOs" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                                        <div class="accordion-body">
+                                            Grafikoni z dvojno osjo vsebujejo dve navpični osi, kar omogoča primerjanje dveh podatkovnih nizov z različnima magnitudama v enem grafu. 
+                                            Ta vrsta grafikona je uporabna, ker omogoča prikaz podatkov, ki bi bili sicer težko primerljivi zaradi razlike v enotah merjenja. 
+                                            <br><br>Uporaba dvojne osi ni nujno znak zavajanja, saj ima svoj namen in lahko pripomore k jasnejšemu prikazu kompleksnih podatkov. 
+                                            Kljub temu pa se grafikoni z dvojno osjo pogosto uporabljajo tudi za prikaz lažnih korelacij.                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#obrnjenaOs" aria-expanded="false" aria-controls="obrnjenaOs">
+                                            <strong>Obrnjena os</strong> 
+                                        </button>
+                                    </h2>
+                                    <div id="obrnjenaOs" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                                        <div class="accordion-body">
+                                            Grafikoni z obrnjeno osjo spremenijo orientacijo vsaj ene osi, kar lahko vpliva na interpretacijo trendov. 
+                                            Ta sprememba krši oblikovno pravilo, ki predvideva, da se vrednosti na oseh povečujejo. 
+                                            Uporaba te manipulacije povzroči, da bralec grafikona pridobi negirano sporočilo dejanskih podatkov.                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iluzija" aria-expanded="false" aria-controls="iluzija">
+                                            <strong>Vizualna iluzija </strong>
+                                        </button>
+                                    </h2>
+                                    <div id="iluzija" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                                        <div class="accordion-body">
+                                            Vizualne iluzije s pomočjo razmerij in kotov manipulirajo prikaz podatkov. Primeri vizualnih iluzij so uporaba 3D efekta, sprememba razmerja med X in Y osjo 
+                                            ter napačna predstavitev vrednosti z velikostjo točk.
+                                            <br><br>Pri tortnih in redkeje pri stolpičnih grafikonih lahko pride do manipulacije z uporabo 3D prikaza podatkov. 
+                                            S spremembo kota prikaza lahko podatki, ki so v resnici manjši, zasedejo večjo površino grafikona, in obratno. Ta tehnika prikrije dejanske razlike med podatki.
+                                            <br><br>Pri črtnem grafikonu lahko pride do zavajanja s spreminjanjem razmerja dolžine X in Y osi. Sprememba vpliva na naklon trendne črte in s tem poudari 
+                                            ali skrije informacije.  Včasih je sprememba razmerja nujna, da podatke prikažemo pravilno. Vedno želimo prikazati pravilen trend in razliko med posameznimi točkami.
+                                            <br><br>Mehurčni grafikon prikazuje vrednosti tretje spremenljivke z uporabo velikosti točk, ki jih lahko predstavimo bodisi s ploščino mehurčka bodisi z njegovim premerom. 
+                                            Čeprav ni enotnega standarda, se priporoča uporaba ploščine mehurčka, saj je manj dovzetna za popačenje informacij. Zaradi tega se uporaba premera za prikaz vrednosti šteje kot manipulacija grafikona.                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#barve" aria-expanded="false" aria-controls="barve">
+                                            <strong>Zmešnjava barv</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="barve" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                                        <div class="accordion-body">
+                                            Grafikoni pogosto uporabljajo barve za razlikovanje med podatkovnimi nizi in izboljšanje preglednosti. 
+                                            Pri grafikonih z zemljevidom se barve uporabljajo za kodiranje in prikaz vrednosti. Grafikoni z neustreznimi barvami so težko berljivi in nepregledni. 
+                                            Če grafikon ne upošteva pričakovanj glede pomena posameznih barv, lahko bralec napačno interpretira podatke.                         
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#neenakomerno" aria-expanded="false" aria-controls="neenakomerno">
+                                            <strong>Neenakomernst</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="neenakomerno" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                                        <div class="accordion-body">
+                                            Ko beremo grafikone, pričakujemo, da bodo vrednosti na oseh enakomerno porazdeljene.  Spreminjanje meja skupin na neenake intervale vpliva na število podatkov, 
+                                            ki jih vključimo v posamezno skupino, kar posledično vpliva na prikaz podatkov in statistiko. 
+                                            To lahko vodi do napačne interpretacije grafikona.                         
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manjkajoci" aria-expanded="false" aria-controls="manjkajoci">
+                                            <strong>Manjkajoči podatki</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="manjkajoci" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+                                        <div class="accordion-body">
+                                            Manjkajoči deli ogrodja grafikona nam oteži branje in razumevanje grafikonov, včasih pa nas lahko tudi zavede, saj lahko zgolj domnevamo, kaj grafikon prikazuje. 
+                                            Manjkajoči elementi so lahko naslov grafikona, naslovi osi, legenda, oznake vrednosti ali celo cela os.                          
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Kršitev oblikovnih pravil 
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>....</strong>                          
-                            </div>
-                        </div>
                         </div>
                     </div>
 
-                    <div class="text-center mt-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
-                    </div>
                 </div>
             </div>
         </main>
@@ -326,23 +558,25 @@
             <div class="container-fluid full-screen">
                 <div class="container">
                     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+                    <p class="col-md-4 mb-0 text-muted">© 2024 Zala Gruden</p>
                 
                     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                     </a>
                 
                     <ul class="nav col-md-4 justify-content-end">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/ZalaGr/SvetGrafikonov">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a></li>
                     </ul>
                     </footer>
                 </div>
             </div>
         </footer>
+
+
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

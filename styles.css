@@ -8,8 +8,8 @@
     --title-font: 'Open Sans', sans-serif;
     --logo-font: 'Open Sans', sans-serif;
     --bg-color: #fcf8f5; 
-    --color-red: #FF5353;
-    --color-green: #8BC926;
+    --color-red: #961111e7;
+    --color-green: #568014;
     --color-one: #008DDA;
     --color-two: #66c2ff;
     --color-three: #d8f3ff;
@@ -22,7 +22,7 @@
 body {
     padding-top: 80px;
     font-family: var(--body-font); 
-    font-size: medium;
+    font-size: larger;
 }
 
 .box-color {
@@ -35,7 +35,7 @@ h1, h2, h3{
     font-weight: 600;
 }
 
-h4 {
+h4, h5 {
  font-weight: 600;
 }
 
@@ -61,7 +61,7 @@ h4 {
 
 /* IMAGE */ 
 .img-max {
-    height: 90%;
+    height: 80%;
     width:auto;
 }
 
@@ -78,6 +78,19 @@ h4 {
     width: 95%;
 }
 
+/*ACCORDION */
+
+.accordion {
+    --bs-accordion-active-bg: var(--color-four);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-border-color: var(--color-four);
+    --bs-accordion-border-width: 1px;
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+
 
 /* KVIZ */
 .btn-quiz {
@@ -86,21 +99,13 @@ h4 {
     margin-right: 20px;
     margin-left: 20px;
     color:white;
-    background-color: var(--color-6);
-}
-
-.btn-quiz {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 20px;
-    margin-left: 20px;
-    color:white;
-    background-color: var(--color-6);
+    background-color: var(--color-five);
+    font-size: large;
 }
 
 .btn-quiz:hover {
     color:white;
-    background-color: var(--color-6);
+    background-color: var(--color-five);
     opacity: 0.8;
 }
 
@@ -111,18 +116,19 @@ h4 {
     margin-left: 20px;
     color:black;
     border-width: 5px;
-    border-color: var(--color-6);
+    border-color: var(--color-five);
     font-weight: 600;
 }
 
 .btn-go:hover {
-    border-color: var(--color-6);
+    border-color: var(--color-five);
 }
 
 .border-quiz {
     border-style: solid;
     border-width: 10px;
-    border-color: var(--color-6);
+    border-color: var(--color-five);
+    padding: 10px;
 }
 
 .progress-bar-wrapper {
@@ -138,7 +144,7 @@ h4 {
     padding-left: 10px;
     padding-right: 10px;
     color:white;
-    background-color: var(--color-5);
+    background-color: var(--color-four);
     border-radius: 10px;
     font-size: large;
 }

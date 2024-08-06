@@ -37,7 +37,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
                           <a class="nav-link" href="index.html">Vse o grafikonih</a>
-                          <a class="nav-link  active" href="vas-lahko-prelisicijo.html">Vas lahko prelisičijo?</a>
+                          <a class="nav-link  active">Vas lahko prelisičijo?</a>
                           <a class="nav-link" href="#">Test grafične pismenosti</a>
                           <a class="nav-link" href="#">O strani</a>
                         </div>
@@ -49,33 +49,23 @@
         </header>
 
         <main>
-            <!--Navodila-->
-            <div class="container" id="navodila">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center text-center">
-                            <h3>O kvizu</h3>
-                            <p>Na čem temelji kviz, kaj vsebuje<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
-                        </div>
-                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center text-center">
-                            <h3>Navodila</h3>
-                            <p> Kako se rešuje kviz, razlaga rezultatov<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies dui quis ex tincidunt ornare. Mauris euismod urna vitae felis fermentum, quis efficitur magna rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra tortor a sapien rutrum tristique. Cras ultricies venenatis condimentum. Cras vel ipsum ut mauris porttitor facilisis nec ut felis. Quisque eu risus a ex elementum tincidunt. Suspendisse fringilla mauris blandit erat ultrices venenatis non ut velit. Mauris faucibus nisi ac ex tincidunt mollis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!--Kviz-->
-            <div class="container-fluid full-screen box-color" id="kviz">
-                    <div class="container mt-5 pb-4">
-                        <h1 class="text-center pt-3">Katera manipulacija je uporabljena?</h1>
+            <div class="container" id="kviz">
+                    <div class="container">
+                        <h1 class="text-center pt-3" id="headerElement">Katera manipulacija je uporabljena?</h1>
 
                         <!--Progress bar-->
                         <div class="container mt-4">
                             <div class="progress-bar-wrapper">
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" id="bar-1" style="width: 50%; background-color: gray; border-right: 2px solid white;" ></div>
-                                    <div class="progress-bar" role="progressbar" id="bar-2" style="width: 50%; background-color: rgb(170, 170, 170); border-left: 2px solid white;"></div>
+                                    <div class="progress-bar" role="progressbar" id="bar-1" style="width: 60%; background-color: gray; border: 1px solid var(--bg-color);" ></div>
+                                    <div class="progress-bar" role="progressbar" id="bar-2" style="width: 60%; background-color: rgb(170, 170, 170); border: 1px solid var(--bg-color);"></div>
+                                    <div class="progress-bar" role="progressbar" id="bar-3" style="width: 60%; background-color: gray; border: 1px solid var(--bg-color);;" ></div>
+                                    <div class="progress-bar" role="progressbar" id="bar-4" style="width: 60%; background-color: rgb(170, 170, 170); border: 1px solid var(--bg-color);"></div>
+                                    <div class="progress-bar" role="progressbar" id="bar-5" style="width: 60%; background-color: gray; border: 1px solid var(--bg-color);" ></div>
+                                    <div class="progress-bar" role="progressbar" id="bar-6" style="width: 60%; background-color: rgb(170, 170, 170); border: 1px solid var(--bg-color);"></div>
                                 </div>
                             </div>
                         </div>
@@ -85,13 +75,14 @@
                         <div class="container" id="question">
                             <div class="row mt-3 justify-content-center">
                                 <!-- Left -->
-                                <div class="col-md-6 py-2 d-flex flex-column justify-content-center align-items-center text-center" style="background-color: var(--color-6);">
-                                    <img src="" class="img-fluid img-max my-3" id="question-image">
-                                    <p id="question-description" style="color: white;"></p>
+                                <div class="col-md-6 d-flex flex-column align-items-center border-quiz text-center" style="background-color: var(--color-five);">
+                                    <img src="" class="img-fluid px-sm-3" id="question-image">
+                                    <p class="mb-2 mt-1 px-sm-3" style="color: white; text-align: right; width: 100%;">Vir: <a href="" id="source1" style="color: white;"></a></p>
+                                    <p class="px-sm-3" id="question-description" style="color: white;"></p>
                                 </div>
                                 
                                 <!-- Right -->
-                                <div class="col-md-6 py-2 d-flex flex-column justify-content-center border-quiz">
+                                <div class="col-md-6 d-flex flex-column justify-content-center border-quiz">
                                     <button class="btn btn-quiz" id="btn-1">Button"</button>
                                     <button class="btn btn-quiz" id="btn-2">Button</button>
                                     <button class="btn btn-quiz" id="btn-3">Button</button>
@@ -101,51 +92,110 @@
                             </div>
                         </div>
 
-                        <!-- Answer -->
-                        <div class="container"  id="answer" style="display: none;">
+                        <!-- Answer-->
+                        <div class="container" id="answer" style="display: none; font-size: large;">
                             <div class="row mt-3 justify-content-center">
                                 <!-- Left -->
-                                <div class="col-md-6 py-2 d-flex flex-column align-items-center text-center" style="color: white; background-color: var(--color-6);">
-                                    <p class="mb-0 mt-3" id="left-title" style="font-weight: 600; font-size: large;"></p>
-                                    <img src="" class="img-fluid img-max my-3" id="left-graph">
-                                    <p><span style="font-weight: 600;">Izbrani odgovor: </span><span id="selected-option"></span> </p>
-                                    <p><span style="font-weight: 600;">Pravilni odgovor: </span><span id="correct-option"></span> </p>
+                                <div class="col-md-6 py-2 d-flex flex-column align-items-center border-quiz text-center" style="color: white; background-color: var(--color-five);">
+                                    <p class="mb-0" id="left-title" style="font-weight: 600; font-size: large;"></p>
+                                    <div>
+                                        <img src="" class="img-fluid mt-4 mb-1 px-sm-3" id="left-graph" style="object-fit: contain;">
+                                        <p class="px-sm-3" style="color: white; text-align: right; width: 100%;">Vir: <a href="" id="source2" style="color: white;"></a></p>
+                                    </div>
+
+                                    <div id="result-1" >
+                                        <p><span style="font-weight: 600;">Izbrani odgovor: </span><span id="selected-option"></span></p>
+                                        <p><span style="font-weight: 600;">Pravilni odgovor: </span><span id="correct-option"></span></p>
+                                    </div>
 
                                 </div>
-                                
+
                                 <!-- Right -->
-                                <div class="col-md-6 py-2 d-flex flex-column align-items-center border-quiz text-center">
-                                    <p class="mb-0 mt-3" id="right-title" style="font-weight: 600; font-size: large;">PRAVILEN GRAFIKON</p>
-                                    <img src="" class="img-fluid img-max my-3" id="right-graph">
-                                    <p class="mx-3 mt-3 p-2" id="answer-description" style="color: white; background-color: var(--color-6);"></p>
+                                <div class="col-md-6 py-2 d-flex flex-column justify-content-center align-items-center border-quiz text-center">
+                                    <p class="mb-0" id="right-title" style="font-weight: 700; font-size: large;">PRAVILEN GRAFIKON</p>
+                                    <div class="px-sm-3">
+                                        <img src="" class="img-fluid mt-4 mb-1" id="right-graph" style="border: 1px solid var(--color-five); object-fit: contain;">
+                                    </div>
+
+                                    <div class="mt-2" id="result-2" style="display: none;">
+                                        <p><span style="font-weight: 600;">Izbrani odgovor: </span><span id="selected-option-2"></span></p>
+                                        <p><span style="font-weight: 600;">Pravilni odgovor: </span><span id="correct-option-2"></span></p>
+                                    </div>
+
+                                    <p class="mx-3 mt-2 p-2" id="answer-description" style="color: white; background-color: var(--color-five);"></p>
                                     <div class="d-flex justify-content-end">
                                         <button class="btn btn-go" type="button" id="btn-go" style="width: fit-content;">NADALJUJ</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    
+                        <!-- Score -->
+                        <div class="container"  id="score" style="display: none; font-size: large;">
+                            <div class="row mt-3 justify-content-center">
+                                <!-- Left -->
+                                <div class="col-md-6 py-2 d-flex flex-column align-items-center text-center" style="color: white; background-color: var(--color-five);">
+                                    <div class="mt-3">
+                                        <p class="score-result" id="scoreDisplay-1"></p>
+                                        <p class="score-result" id="scoreDisplay-2"></p>
+                                        <p class="score-result" id="scoreDisplay-3"></p>
+                                        <p class="score-result" id="scoreDisplay-4"></p>
+                                        <p class="score-result" id="scoreDisplay-5"></p>
+                                        <p class="score-result" id="scoreDisplay-6"></p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Right -->
+                                <div class="col-md-6 py-2 d-flex flex-column justify-content-center align-items-center border-quiz text-center">
+                                    <p class="m-0" style="font-weight: 600; font-size: large;"><span>Rezultat: </span> <span id="score-result"></span> <span> / 6</span></p>
+                                    <button class="btn btn-quiz mt-3" id="btn-again">Poskusi ponovno</button>
+                                    <a href="test-graficne-pismenosti.html" class="btn btn-quiz">Test grafične pismenosti</a>
+                                </div>
+                            </div>
                         </div> 
+
                     </div>
 
 
-                    <!-- Score -->
-                    <div class="container"  id="score" style="display: none;">
-                        <div class="row pb-3 justify-content-center">
-                            <!-- Left -->
-                            <div class="col-md-6 py-2 d-flex flex-column align-items-center text-center" style="color: white; background-color: var(--color-6);">
-                                <p class="mt-3" style="font-weight: 600; font-size: large;"><span>Rezultat: </span> <span id="score-result"></span> <span> / 2</span></p>
-                                <p class="score-result" id="scoreDisplay-1"></p>
-                                <p class="score-result" id="scoreDisplay-2"></p>
-                            </div>
-                            
-                            <!-- Right -->
-                            <div class="col-md-6 py-2 d-flex flex-column align-items-center border-quiz text-center">
-                                <button class="btn btn-quiz mt-3" id="btn-again">Poskusi ponovno</button>
-                                <button class="btn btn-quiz" id="btn-SGL">Test grafične pismenosti</button>
-                            </div>
+                </div>
+            </div>
+
+
+            <!--Navodila-->
+            <div class="container-fluid full-screen box-color" id="navodila">
+                <div class="container mt-5 pb-4">
+                    <div class="row">
+                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center">
+                            <h3>O kvizu</h3>
+                            <p>
+                                Cilj kviza je uporabnikom pokazati, kako se lahko grafični prikazi podatkov uporabljajo za zavajanje ali napačno interpretacijo informacij.
+                                Kviz manipulacijo prikaže z istočasna primerjavo nepravilnega in pravilnega grafikona ter besedilom z razlago o manipulaciji.
+                                Nekatere manipulacije so očitne in jih je mogoče hitro prepoznati, medtem ko druge zahtevajo bolj poglobljeno splošno znanje in kritično razmišljanje. 
+                                S tem kviz poudarja, da so lahko nepravilni podatki skriti za dobro izdelanimi grafikoni in spodbuja uporabnike, da natančno analizirajo predstavljene informacije.
+                           </p>
                         </div>
-                    </div> 
-
-
+                        <div class="col-md-6 my-2 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Navodila</h3>
+                            <ol>
+                                <li>
+                                    <strong>Pred začetkom:</strong> 
+                                    Oglejte si sekcijo "Manipulacije grafikonov" na strani "Vse o grafikonih".
+                                </li>
+                                <li>
+                                    <strong>Vprašanje:</strong>
+                                    Za prikazani grafikon morate izbrati, katera manipulacija je uporabljena ali pa označiti, če je grafikon pravilen.
+                                </li>
+                                <li>
+                                    <strong>Pravilni odgovor:</strong>
+                                    Po izbiri odgovora se vam bo prikazal pravilni odgovor. Videli boste pravilno obliko grafikona ter razlago, ki opisuje, zakaj je bil grafikon manipuliran ali zakaj je pravilen.
+                                </li>
+                                <li>
+                                    <strong>Rezultati:</strong>
+                                    Na koncu kviza bo prikazan povzetek vaših rezultatov. Z rdečo ali zeleno barvo bo označeno, ali ste pravilno zaznali manipulacijo.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -156,18 +206,18 @@
             <div class="container-fluid full-screen">
                 <div class="container">
                     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+                    <p class="col-md-4 mb-0 text-muted">© 2024 Zala Gruden</p>
                 
                     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                     </a>
                 
                     <ul class="nav col-md-4 justify-content-end">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/ZalaGr/SvetGrafikonov">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a></li>
                     </ul>
                     </footer>
                 </div>
