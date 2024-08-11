@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Svet grafikonov</title>
+        <link rel="icon" href="images/logo.png">
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav class="navbar navbar-expand-lg navbar-light box-color fixed-top border-bottom">
+                <div class="container-md">
+                    
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" width="30" height="30" class="d-inline-block text-center">
+                        <span class="logo mx-2" >Svet grafikonov</span>
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="index.html">Vse o grafikonih</a>
+                          <a class="nav-link" href="vas-lahko-prelisicijo.html">Vas lahko prelisičijo?</a>
+                          <a class="nav-link active">Test grafične pismenosti</a>
+                          <a class="nav-link" href="o strani.html">O strani</a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            
+        </header>
+
+        <main>
+            <div class="container" id="kviz">
+                <div class="container">
+                    <h1 class="text-center pt-3" id="headerElement">Test grafične pismenosti</h1>
+
+                    <!-- Question 1-->
+                    <div class="container" id="question1" style="font-size: large;">
+                        <div class="row mt-3 justify-content-center">
+                            <!-- Left -->
+                            <div class="col-md-6 d-flex flex-column align-items-center border-quiz text-center" style="background-color: var(--color-quiz);">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">Spodnji grafikon prikazuje odstotek ljudi, ki umrejo zaradi različnih vrst raka.</p>
+                                <img src="images/SGL/Item1.png" class="img-fluid px-sm-3">
+                            </div>
+
+                            <!-- Right -->
+                            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center border-quiz">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">Približno kolikšen odstotek ljudi, ki umrejo zaradi raka, umre zaradi raka B, raka C in raka D skupaj?</p>
+                                <div class="d-flex justify-content-end">
+                                    <input type="number" class="form-control" placeholder="xx %" min="0" max="100" id="input-1">
+                                </div>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <button class="btn btn-go" type="button" id="btn-go-1" style="width: fit-content;">NADALJUJ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                   <!-- Question 2-->
+                    <div class="container" id="question2" style="display: none; font-size: large;">
+                        <div class="row mt-3 justify-content-center">
+                            <!-- Left -->
+                            <div class="col-md-6 d-flex flex-column align-items-center border-quiz text-center" style="background-color: var(--color-quiz);">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">V reviji opazite dve reklami. Vsaka reklama promovira drugo zdravilo za zdravljene srčne bolezni. Obe reklami vključujeta grafikon, ki prikazuje učinkovitost zdravila v primerjavi s placebom.</p>
+                                <img src="images/SGL/Item2.png" class="img-fluid px-sm-3">
+                            </div>
+
+                            <!-- Right -->
+                            <div class="col-md-6 d-flex flex-column justify-content-center text-center border-quiz">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">V primerjavi s placebom, katero zdravilo vodi do večjega upada odstotka bolnikov, ki umrejo?</p>
+                                <button class="btn btn-quiz" id="btn2-1" style="color: var(--color-text-quiz)">Crosicol</button>
+                                <button class="btn btn-quiz" id="btn2-2" style="color: var(--color-text-quiz)">Hertinol</button>
+                                <button class="btn btn-quiz" id="btn2-3" style="color: var(--color-text-quiz)">Obe zdravili delujeta enako dobro</button>
+                                <button class="btn btn-quiz" id="btn2-4" style="color: var(--color-text-quiz)">Nemogoče je določiti</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3-->
+                    <div class="container" id="question3" style="display: none; font-size: large;">
+                        <div class="row mt-3 justify-content-center">
+                            <!-- Left -->
+                            <div class="col-md-6 d-flex flex-column align-items-center border-quiz text-center" style="background-color: var(--color-quiz);">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">Spodnji grafikon prikazuje število moških in žensk z boleznijo X. Na grafikonu je skupno 100 krogcev.</p>
+                                <img src="images/SGL/Item3.png" class="img-fluid px-sm-3">
+                            </div>
+
+                            <!-- Right -->
+                            <div class="col-md-6 d-flex flex-column justify-content-center text-center border-quiz">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">Koliko več moških kot žensk je med 100 bolniki z boleznijo X?</p>
+                                <div class="d-flex justify-content-center px-5">
+                                    <input type="number" class="form-control" placeholder="Število moških" min="0" max="100" id="input-3">
+                                </div>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <button class="btn btn-go" type="button" id="btn-go-3" style="width: fit-content;">NADALJUJ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                   <!-- Question 4-->
+                   <div class="container" id="question4" style="display: none; font-size: large;">
+                        <div class="row mt-3 justify-content-center">
+                            <!-- Left -->
+                            <div class="col-md-6 d-flex flex-column align-items-center border-quiz text-center" style="background-color: var(--color-quiz);">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">V časopisu opazite dve reklami. Vsaka reklama promovira drugo zdravilo za kožno bolezen. Obe reklami vključujeta grafikon, ki prikazuje učinkovitost zdravljena skozi čas.</p>
+                                <img src="images/SGL/Item4.png" class="img-fluid px-sm-3">
+                            </div>
+
+                            <!-- Right -->
+                            <div class="col-md-6 d-flex flex-column justify-content-center text-center border-quiz">
+                                <p class="px-sm-3" style="color: var(--color-text-quiz)">Uporaba katerega zdravila vodi do večjega upada bolnih pacientov?</p>
+                                <button class="btn btn-quiz" id="btn4-1" style="color: var(--color-text-quiz)">Apsoriatin</button>
+                                <button class="btn btn-quiz" id="btn4-2" style="color: var(--color-text-quiz)">Nopsorian</button>
+                                <button class="btn btn-quiz" id="btn4-3" style="color: var(--color-text-quiz)">Obe zdravili delujeta enako dobro</button>
+                                <button class="btn btn-quiz" id="btn4-4" style="color: var(--color-text-quiz)">Nemogoče je določiti</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Results -->
+                    <div class="container"  id="result" style="display: none; font-size: large;">
+                        <div class="row mt-3 justify-content-center">
+                            <!-- Left -->
+                            <div class="col-md-6 py-2 d-flex flex-column justify-content-center align-items-center text-center" style="background-color: var(--color-quiz);">
+                                <p class="m-0 mb-2" style="font-weight: 600; font-size: xx-large; color: var(--color-text-quiz)">Rezultat: <span id="score-result"></span> / 4</span></p>
+                                <p class="px-sm-3" id="score-0" style="display: none; color: var(--color-text-quiz)">
+                                    Dosegli ste boljše rezultate kot 0% posameznikov.
+                                    <br>(glede na podatke v raziskavi <a href="https://journals.sagepub.com/doi/full/10.1177/0272989X19829728?journalCode=mdma" style="color: var(--color-text-quiz)">"Using the Short Graph Literacy Scale to Predict Precursors of Health Behavior Change"</a>)
+                                </p>
+                                <p class="px-sm-3" id="score-1" style="display: none; color: var(--color-text-quiz)">
+                                    Dosegli ste boljše rezultate kot 8.4% posameznikov.
+                                    <br>(glede na podatke v raziskavi <a href="https://journals.sagepub.com/doi/full/10.1177/0272989X19829728?journalCode=mdma" style="color: var(--color-text-quiz)k">"Using the Short Graph Literacy Scale to Predict Precursors of Health Behavior Change"</a>)
+                                </p>
+                                <p class="px-sm-3" id="score-2" style="display: none; color: var(--color-text-quiz)">
+                                    Dosegli ste boljše rezultate kot 26.4% posameznikov.
+                                    <br>(glede na podatke v raziskavi <a href="https://journals.sagepub.com/doi/full/10.1177/0272989X19829728?journalCode=mdma" style="color: var(--color-text-quiz)">"Using the Short Graph Literacy Scale to Predict Precursors of Health Behavior Change"</a>)
+                                </p>
+                                <p class="px-sm-3" id="score-3" style="display: none; color: var(--color-text-quiz)">
+                                    Dosegli ste boljše rezultate kot 58% posameznikov.
+                                    <br>(glede na podatke v raziskavi <a href="https://journals.sagepub.com/doi/full/10.1177/0272989X19829728?journalCode=mdma" style="color: var(--color-text-quiz)">"Using the Short Graph Literacy Scale to Predict Precursors of Health Behavior Change"</a>)
+                                </p>
+                                <p class="px-sm-3" id="score-4" style="display: none; color: var(--color-text-quiz)">
+                                    Dosegli ste boljše rezultate kot 89.7% posameznikov.
+                                    <br>(glede na podatke v raziskavi <a href="https://journals.sagepub.com/doi/full/10.1177/0272989X19829728?journalCode=mdma" style="color: var(--color-text-quiz)">"Using the Short Graph Literacy Scale to Predict Precursors of Health Behavior Change"</a>)
+                                </p>
+
+                            </div>
+                            
+                            <!-- Right -->
+                            <div class="col-md-6 py-2 d-flex flex-column justify-content-center align-items-center border-quiz text-center">
+                                <p class="px-sm-3" id="result-0" style="display: none; color: var(--color-text-quiz)">
+                                    Glede na rezultate je vaša grafična pismenost zelo nizka.
+                                    Nizka grafična pismenost lahko resno omeji vašo sposobnost razumeti in pravilno interpretirati podatke v grafikonih. 
+                                    To vas naredi zelo dovzetne za zavajanje in manipulacijo prek napačnih grafičnih prikazov 
+                                    Svetujemo, da preučite <a href="index.html" style="color: black">teorijo</a> 
+                                    in nato utrdite svoje znanje z <a href="vas-lahko-prelisicijo.html" style="color: black">reševanjem nalog</a>.
+                                </p>
+                                <p class="px-sm-3" id="result-1" style="display: none; color: var(--color-text-quiz)">
+                                    Glede na rezultate je vaša grafična pismenost zelo nizka.
+                                    Nizka grafična pismenost lahko znatno vpliva na vašo sposobnost pravilno razumevati grafične prikaze. 
+                                    Posledično ste bolj izpostavljeni tveganju, da vas zavajajo ali manipulirajo s pomočjo napačnih ali pristranskih grafikonov.
+                                    Svetujemo, da preučite <a href="index.html" style="color: black">teorijo</a> 
+                                    in nato utrdite svoje znanje z <a href="vas-lahko-prelisicijo.html" style="color: black">reševanjem nalog</a>.
+                                </p>
+                                <p class="px-sm-3" id="result-2" style="display: none; color: var(--color-text-quiz)">
+                                    Glede na rezultate je vaša grafična pismenost nizka.
+                                    Nizka grafična pismenost negativno vpliva na sposobnost sprejemanja dobrih odločitev in prepoznavanja tveganj.  
+                                    Svetujemo, da preučite <a href="index.html" style="color: black">teorijo</a> 
+                                    in nato utrdite svoje znanje z <a href="vas-lahko-prelisicijo.html" style="color: black">reševanjem nalog</a>.
+                                </p>
+                                <p class="px-sm-3" id="result-3" style="display: none; color: var(--color-text-quiz)">
+                                    Glede na rezultate je vaša grafična pismenost visoka.
+                                    Visoka grafična pismenost pozitivno vpliva na sprejemanje odločitev in prepoznavanje manipulacij v grafikonih.
+                                    Svoje znanje lahko utrdite z <a href="vas-lahko-prelisicijo.html" style="color: black">reševanjem nalog</a>.
+                                </p>
+                                <p class="px-sm-3" id="result-4" style="display: none; color: var(--color-text-quiz)">
+                                    Glede na rezultate je vaša grafična pismenost zelo visoka.
+                                    Visoka grafična pismenost vam omogoča, da zlahka razumete in pravilno interpretirate podatke v grafikonih.
+                                    To zmanjšuje tveganje, da bi bili zavedeni ali manipulirani s pomočjo napačnih grafičnih prikazov.
+                                    Svoje znanje lahko preverite z <a href="vas-lahko-prelisicijo.html" style="color: black">reševanjem nalog</a>.
+                                </p>
+                                <button class="btn btn-quiz" id="btn-again" style="color: var(--color-text-quiz)">Poskusi ponovno</button>
+                                <a href="index.html#razumevanje-grafikonov" class="btn btn-quiz" style="color: var(--color-text-quiz)">Več o grafikonih</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!--Navodila-->
+            <div class="container-fluid full-screen box-color" id="navodila">
+                <div class="container mt-5 pb-4">
+                    <div class="row px-md-3">
+                        <div class="col-md-6 my-2 pe-md-5 d-flex flex-column justify-content-center align-items-center">
+                            <h3>O testu</h3>
+                            <p>
+                                Test grafične pismenosti temelji na raziskavi <a href="https://journals.sagepub.com/doi/full/10.1177/0272989X19829728?journalCode=mdma" style="color: black">"Using the Short Graph Literacy Scale to Predict Precursors of Health Behavior Change"</a>
+                                in je preveden v slovenščino. Prvotna verzija testa je vključeval 13 nalog, ki so preizkušale tri ključne vidike grafične pismenosti: sposobnost natančnega iskanja specifičnih podatkov v grafikonu, 
+                                razumevanje odnosov med različnimi podatki ter sposobnost sklepanja in napovedovanja na podlagi prikazanih informacij. Leta 2018 je bil test skrajšan na 4 naloge, 
+                                ki prav tako zanesljivo merijo grafično pismenost. 
+                            </p>
+                        </div>
+                        <div class="col-md-6 my-2 px-md-3 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Navodila</h3>
+                            <p>
+                                Test grafične pismenosti zajema 4 naloge. Vsaka naloga vsebuje grafikon, razlago grafikona in vprašanje. Ko odgovorite na vprašanje, kliknite gumb "Nadaljuj".
+                                Med reševanjem in po koncu testa ne boste prejeli nobenih povratnih informacij o pravilnosti posameznih odgovorov, saj test vključuje le 4 stalne naloge. 
+                                Vsaka naloga je ocenjena z 0 točkami (nepravilen odgovor) ali 1 točko (pravilen odgovor). Po zaključku testa boste prejeli skupni rezultat in razlago, kaj ta rezultat pomeni.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <!-- place footer here -->
+            <div class="container-fluid full-screen">
+                <div class="container">
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <p class="col-md-4 mb-0 text-muted">© 2024 Zala Gruden</p>
+                
+                    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/ZalaGr/SvetGrafikonov">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a></li>
+                    </ul>
+                    </footer>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="SGL.js"></script> 
+    </body>
+</html>

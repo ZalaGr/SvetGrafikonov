@@ -3,21 +3,18 @@
 
 
 :root {
-    --main-color: #c07d30; /* Example color */
+    --main-color: #0077B6; /* Example color */
     --body-font: 'Open Sans', sans-serif;
     --title-font: 'Open Sans', sans-serif;
     --logo-font: 'Open Sans', sans-serif;
-    --bg-color: #fcf8f5; 
-    --color-red: #961111e7;
-    --color-green: #568014;
-    --color-one: #008DDA;
-    --color-two: #66c2ff;
-    --color-three: #d8f3ff;
-    --color-four: #dfad48;
-    --color-five: #836c51; 
-    --color-six: #ffedcb;
+    --bg-color: #f0f0f0; 
+    --color-red: #c91d1de7;
+    --color-green: #218014;
+    --color-four: #90E0EF;
+    --color-five: #023E8A; 
+    --color-quiz: #90E0EF;
+    --color-text-quiz: black;
 }
-
 
 body {
     padding-top: 80px;
@@ -81,14 +78,15 @@ h4, h5 {
 /*ACCORDION */
 
 .accordion {
-    --bs-accordion-active-bg: var(--color-four);
+    --bs-accordion-active-bg: var(--color-five);
     --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-border-color: var(--color-four);
+    --bs-accordion-border-color: var(--color-five);
     --bs-accordion-border-width: 1px;
 }
 
 .accordion-button:not(.collapsed){
     box-shadow: none;
+    color: white;
 }
 
 
@@ -98,14 +96,12 @@ h4, h5 {
     margin-bottom: 5px;
     margin-right: 20px;
     margin-left: 20px;
-    color:white;
-    background-color: var(--color-five);
+    background-color: var(--color-quiz);
     font-size: large;
 }
 
 .btn-quiz:hover {
-    color:white;
-    background-color: var(--color-five);
+    background-color: var(--color-quiz);
     opacity: 0.8;
 }
 
@@ -116,18 +112,18 @@ h4, h5 {
     margin-left: 20px;
     color:black;
     border-width: 5px;
-    border-color: var(--color-five);
+    border-color: var(--color-quiz);
     font-weight: 600;
 }
 
 .btn-go:hover {
-    border-color: var(--color-five);
+    border-color: var(--color-quiz);
 }
 
 .border-quiz {
     border-style: solid;
     border-width: 10px;
-    border-color: var(--color-five);
+    border-color: var(--color-quiz);
     padding: 10px;
 }
 
@@ -148,3 +144,18 @@ h4, h5 {
     border-radius: 10px;
     font-size: large;
 }
+
+
+/*Test grafične pismenosti*/
+.form-control {
+    box-shadow: none;
+    border-color: gray;
+    border-width: 2px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: gray;
+    border-width: 2px;
+}
+
