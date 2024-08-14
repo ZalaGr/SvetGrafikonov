@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: "images/Data errors/Cherry picking/inflacija_prav.png",
                 options: ["Odrezana os", "Neenakomernost", "Uporaba opomb", "Selektivna izbira", "Grafikon je pravilen"],
                 correctAnswer: "Selektivna izbira",
-                explanation: "Nepravilen grafikon uporablja selektivno izbrane podatke za prikaz bolj strmega trenda. Na grafikonu je prikazanih zelo malo podatkovnih točk, kar nas opozori na možnost manipulacije.",
+                explanation: "Nepravilen grafikon uporablja selektivno izbrane podatke za prikaz strmejšega trenda. Na grafikonu je prikazanih zelo malo podatkovnih točk, kar opozarja na možnost manipulacije.",
                 sourceURL: "https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/H281S.px/",
                 sourceName: "SiStat",
             },
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 6,
             versionFalse: {
-                description: "Grafikon prikazuje povprečno število doseženih točk na končnem izpitu skozi leta.",
+                description: "Grafikon prikazuje povprečno število doseženih točk na končnem izpitu čez leta.",
                 image_question: "images/Data errors/Statistical nuance/točke_narobe.png",
                 image_answer: "images/Data errors/Statistical nuance/točke_prav.png",
                 options: ["Neenakomernost", "Dvojna os", "Izbira poljubnega praga", "Zanemarjanje podrobnosti", "Grafikon je pravilen"],
@@ -130,12 +130,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 sourceName: "Izmišljeni podatki",
             },
             versionTrue: {
-                description: "Grafikon prikazuje povprečno število doseženih točk na končnem izpitu skozi leta.",
+                description: "Grafikon prikazuje povprečno število doseženih točk na končnem izpitu čez leta.",
                 image_question: "images/Data errors/Statistical nuance/točke_prav.png",
                 image_answer: null,
                 options: ["Zanemarjanje podrobnosti", "Moč besed", "Vizualna iluzija", "Obrnjena os", "Grafikon je pravilen"],
                 correctAnswer: "Grafikon je pravilen",
-                explanation: "Grafikon je pravilen in ne vsebuje manipulacij, saj za prikaz povprečnih doseženih točk uporablja procente namesto dejanskih točk. Ta pristop omogoča primerjavo rezultatov ne glede na spremembe v številu maksimalnih možnih točk.",
+                explanation: "Grafikon je pravilen in ne vsebuje manipulacij, saj za prikaz povprečnih doseženih točk uporablja odstotke namesto dejanskih točk. Ta pristop omogoča primerjavo rezultatov ne glede na spremembe v številu maksimalnih možnih točk.",
                 sourceURL: "",
                 sourceName: "Izmišljeni podatki",
             }
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: "images/Design violation/Truncated axis/HxW_prav.png",
                 options: ["Lažna korelacija", "Zmešnjava barv", "Odrezana os", "Selektivna izbira", "Grafikon je pravilen"],
                 correctAnswer: "Odrezana os",
-                explanation: "Nepravilen grafikon nejasno prikazuje podatke. Os je treba odsekati, da lahko razumemo predstavljeno informacijo na grafikonu.",
+                explanation: "Nepravilen grafikon nejasno prikazuje podatke. Os je potrebno odsekati, da lahko razumemo predstavljeno informacijo na grafikonu.",
                 sourceURL: "https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset",
                 sourceName: "Kaggle",
             },
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: null,
                 options: ["Obrnjena os", "Odrezana os", "Manjkajoči podatki", "Izbira poljubnega praga", "Grafikon je pravilen"],
                 correctAnswer: "Grafikon je pravilen",
-                explanation: "Kljub temu, da grafikon uporablja odrezano os, je pravilen. Cilj grafikonov je jasno podajanje informacij in v tem primeru to pomeni uporabiti odrezano os.",
+                explanation: "Kljub temu, da grafikon uporablja odrezano os, je pravilen. Cilj grafikonov je jasno podajanje informacij in v tem primeru to pomeni uporabo odrezane osi.",
                 sourceURL: "https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset",
                 sourceName: "Kaggle",
             }
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: null,
                 options: ["Vizualna iluzija", "Neenakomernost", "Zmešnjava barv", "Selektivna izbira", "Grafikon je pravilen"],
                 correctAnswer: "Grafikon je pravilen",
-                explanation: "Grafikon je pravilen in ne vsebuje manipulacij. Podatki so prikazani z 2D tortnim grafikonom in različne operacijske sisteme predstavljajo različne barve, tako da je grafikon razumljiv.",
+                explanation: "Grafikon je pravilen in ne vsebuje manipulacij. Podatki so prikazani z 2D tortnim grafikonom. Različne operacijske sisteme predstavljajo različne barve, tako da je grafikon razumljiv.",
                 sourceURL: "https://gs.statcounter.com/os-market-share",
                 sourceName: "Statcounter",
             }
@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: null,
                 options: ["Neenakomernost", "Manjkajoči podatki", "Vizualna iluzija", "Izbira poljubnega praga", "Grafikon je pravilen"],
                 correctAnswer: "Grafikon je pravilen",
-                explanation: "Grafikon je pravilen in ne vsebuje manipulacij. Grafikon zajema 5 kategorij, ki zajemajo primerljivo število vrednosti. Najnižje vrednosti so rdeče barve, najvišje pa zelene.",
+                explanation: "Grafikon je pravilen in ne vsebuje manipulacij. Zajema 5 kategorij, ki obsegajo primerljivo število vrednosti. Najnižje vrednosti so rdeče barve, najvišje pa zelene.",
                 sourceURL: "https://gis.stat.si ",
                 sourceName: "SiStat",
             }
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: "images/Design violation/Inconsistency/prenocisca_prav.png",
                 options: ["Moč besed", "Odrezana os", "Neenakomernost", "Zanemarjanje podrobnosti", "Grafikon je pravilen"],
                 correctAnswer: "Neenakomernost",
-                explanation: "Nepravilen grafikon prikazuje podatke z neenakomernimi skupinami. Skupine zajemajo skupne podatke različnega števila let, zato jih ne moremo primerjati.",
+                explanation: "Nepravilen grafikon prikazuje podatke z neenakomernimi skupinami. Skupine zajemajo skupne podatke razpona več let, zato jih ne moremo primerjati.",
                 sourceURL: "https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2164430S.px/",
                 sourceName: "SiStat",
             },
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: "images/Design violation/Inconsistency/prav.png",
                 options: ["Dvojna os", "Zmešnjava barv", "Vizualna iluzija", "Zanemarjanje podrobnosti", "Grafikon je pravilen"],
                 correctAnswer: "Zmešnjava barv",
-                explanation: "Nepravilen grafikon uporablja različne barve, ki ne tvorijo gradient. To pomeni, da težje opazimo spremembo med sosednjima kategorijama. Posledično je grafikon manj pregleden.",
+                explanation: "Nepravilen grafikon uporablja različne barve, ki ne tvorijo gradienta. To pomeni, da težje opazimo spremembo med sosednjima kategorijama, kar naredi grafikon manj pregleden.",
                 sourceURL: "https://gis.stat.si ",
                 sourceName: "SiStat",
             },
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 17, //popolnoma enako, ker true v id 10
             versionFalse: {
-                description: "Grafikon prikazuje tržni delež operacijskih sistemov na vseh napravh decembra leta 2023.",
+                description: "Grafikon prikazuje tržni delež operacijskih sistemov na vseh napravah decembra leta 2023.",
                 image_question: "images/Design violation/Color mess/tortni_narobe.png",
                 image_answer: "images/Design violation/Color mess/tortni_prav.png",
                 options: ["Manjkajoči podatki", "Selektivna izbira", "Zmešnjava barv", "Vizualna iluzija", "Grafikon je pravilen"],
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sourceName: "Statcounter",
             },
             versionTrue: {
-                description: "Grafikon prikazuje tržni delež operacijskih sistemov na vseh napravh decembra leta 2023.",
+                description: "Grafikon prikazuje tržni delež operacijskih sistemov na vseh napravah decembra leta 2023.",
                 image_question: "images/Design violation/Color mess/tortni_narobe.png",
                 image_answer: "images/Design violation/Color mess/tortni_prav.png",
                 options: ["Manjkajoči podatki", "Selektivna izbira", "Zmešnjava barv", "Vizualna iluzija", "Grafikon je pravilen"],
@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: "images/Design violation/Missing data/volitve_prav.png",
                 options: ["Manjkajoči podatki", "Zmešnjava barv", "Zanemarjanje podrobnosti", "Izbira poljubnega praga", "Grafikon je pravilen"],
                 correctAnswer: "Manjkajoči podatki",
-                explanation: "Nepravilen grafikon ne vsebuje legende. Posledično bralec ne more razbrati, koliko mandatov so dobile stranke.",
+                explanation: "Nepravilen grafikon ne vsebuje legende. Bralec ne more razbrati števila dobljenih mandatov posameznih strank.",
                 sourceURL: "https://www.dvk-rs.si/arhivi/dz2022/#/rezultati",
                 sourceName: "Državna volilna komisija",
             },
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: null,
                 options: ["Manjkajoči podatki", "Lažna korelacija", "Zanemarjanje podrobnosti", "Zmešnjava barv", "Grafikon je pravilen"],
                 correctAnswer: "Grafikon je pravilen",
-                explanation: "Grafikon je pravilen in ne vsebuje manipulacij. Vsebuje vse potrebne elemente grafikona in število mandatov prikazuje z uporabo procentov.",
+                explanation: "Grafikon je pravilen in ne vsebuje manipulacij. Vsebuje vse potrebne elemente grafikona in število mandatov prikazuje z uporabo odstotkov.",
                 sourceURL: "https://www.dvk-rs.si/arhivi/dz2022/#/rezultati",
                 sourceName: "Državna volilna komisija",
             }
