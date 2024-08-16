@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/cooper-hewitt');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
 :root {
@@ -29,17 +29,17 @@ body {
 h1, h2, h3{
     font-family: var(--logo-font);
     color: var(--main-color); 
-    font-weight: 600;
+    font-weight: bold;
 }
 
 h4, h5 {
- font-weight: 600;
+ font-weight: bold;
 }
 
 /* NAVBAR */
 .logo {
     color: var(--main-color); 
-    font-weight: 600;
+    font-weight: bold;
     font-size: x-large;
     font-family: var(--logo-font);
 }
@@ -47,7 +47,7 @@ h4, h5 {
 .nav-link{
     font-size: larger;
     font-family: var(--title-font);
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .nav-link:hover{
@@ -113,7 +113,7 @@ h4, h5 {
     color:black;
     border-width: 5px;
     border-color: var(--color-quiz);
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .btn-go:hover {
