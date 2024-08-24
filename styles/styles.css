@@ -10,9 +10,9 @@
     --bg-color: #f0f0f0; 
     --color-red: #c91d1de7;
     --color-green: #218014;
-    --color-four: #90E0EF;
+    --color-four: #a8ebff;
     --color-five: #023E8A; 
-    --color-quiz: #90E0EF;
+    --color-quiz: #a8ebff;
     --color-text-quiz: black;
 }
 
@@ -93,7 +93,7 @@ h4, h5 {
 /* KVIZ */
 .btn-quiz {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-right: 20px;
     margin-left: 20px;
     background-color: var(--color-quiz);
@@ -107,7 +107,7 @@ h4, h5 {
 
 .btn-go {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-right: 20px;
     margin-left: 20px;
     color:black;
@@ -116,9 +116,12 @@ h4, h5 {
     font-weight: bold;
 }
 
-.btn-go:hover {
+.btn-go:hover, .btn-go:focus {
     border-color: var(--color-quiz);
 }
+.btn-go:active {
+    border-color: var(--color-five)!important;
+ }
 
 .border-quiz {
     border-style: solid;

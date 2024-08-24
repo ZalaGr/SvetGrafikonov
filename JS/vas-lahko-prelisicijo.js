@@ -148,7 +148,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: "images/Design violation/Truncated axis/HxW_prav.png",
                 options: ["Lažna korelacija", "Zmešnjava barv", "Odrezana os", "Selektivna izbira", "Grafikon je pravilen"],
                 correctAnswer: "Odrezana os",
-                explanation: "Nepravilen grafikon nejasno prikazuje podatke. Os je potrebno odsekati, da lahko razumemo predstavljeno informacijo na grafikonu.",
+                explanation: "Nepravilen grafikon nejasno prikazuje podatke. " +
+                "Os je potrebno odsekati, da lahko razumemo predstavljeno informacijo na grafikonu.",
                 sourceURL: "https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset",
                 sourceName: "Kaggle",
             },
@@ -158,7 +159,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 image_answer: null,
                 options: ["Obrnjena os", "Odrezana os", "Manjkajoči podatki", "Izbira poljubnega praga", "Grafikon je pravilen"],
                 correctAnswer: "Grafikon je pravilen",
-                explanation: "Kljub temu, da grafikon uporablja odrezano os, je pravilen. Cilj grafikonov je jasno podajanje informacij in v tem primeru to pomeni uporabo odrezane osi.",
+                explanation: "Kljub temu, da grafikon uporablja odrezano os, je pravilen." +
+                "Cilj grafikonov je jasno podajanje informacij in v tem primeru to pomeni uporabo odrezane osi.",
                 sourceURL: "https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset",
                 sourceName: "Kaggle",
             }
@@ -446,7 +448,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // 34 različnih vprašanj
 
 //variables
-var numEements = 6; 
+var numElements = 6; 
 let score = 0;
 let currentQuestionIndex = 0;
 
@@ -510,13 +512,16 @@ const scoreDisplayElements = [
 
 //---------------------------------------------------------------------------------------------
 //Choose random questions
+
+
+
 function getRandomQuestions(data){
     // Shuffle array
     const shuffled = data.sort(() => 0.5 - Math.random());
-    // Get sub-array of first n elements after shuffled
-    let selected = shuffled.slice(0, numEements);
+    // Get sub-array of first n elements
+    let selected = shuffled.slice(0, numElements);
     console.log(selected);
-    //Randomly choose true or false version (malo večja možnost za false version)
+    // Randomly choose true or false version of the question
     return selected.map(obj => Math.random() >= 0.65 ? obj.versionTrue : obj.versionFalse);
 }
 
@@ -524,6 +529,11 @@ function getRandomQuestions(data){
 const selectedQuestions = getRandomQuestions(data);
 let currentQuestion = selectedQuestions[currentQuestionIndex];
 console.log(selectedQuestions);
+
+
+
+
+
 
 //---------------------------------------------------------------------------------------------
 
