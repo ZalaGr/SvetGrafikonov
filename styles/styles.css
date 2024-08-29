@@ -7,7 +7,7 @@
     --body-font: 'Open Sans', sans-serif;
     --title-font: 'Open Sans', sans-serif;
     --logo-font: 'Open Sans', sans-serif;
-    --bg-color: #f0f0f0; 
+    --bg-color: #f3f3f3; 
     --color-red: #c91d1de7;
     --color-green: #218014;
     --color-four: #a8ebff;
@@ -69,10 +69,6 @@ h4, h5 {
     margin-right: auto;
     object-fit: cover;
     width: 90%;
-}
-
-.card {
-    width: 95%;
 }
 
 /*ACCORDION */
